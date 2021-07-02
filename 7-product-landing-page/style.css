@@ -298,3 +298,22 @@ textarea {
   font-family: 'Source Sans Pro', Sans-Serif;
   font-size: 1rem;
 }
+
+/* ======================================= 
+                 --KEYFRAMES 
+ ======================================= */
+#healthy-text {
+  animation-name: animateheader;
+  animation-duration: 3s;
+}
+
+@keyframes animateheader {
+  from {
+    opacity: 0;
+    /* transform: translateX(5em); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translateX(10em); */
+  }
+}
