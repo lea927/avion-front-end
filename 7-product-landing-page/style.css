@@ -14,12 +14,60 @@
 /* ======================================= 
                  --LAYOUT 
  ======================================= */
+
+.content-wrapper,
+#nav-links-container,
+#nav-container,
+.right-content-wrapper,
+.left-content-wrapper {
+  display: flex;
+}
+
+.right-content-wrapper {
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  margin-top: 13vh;
+  /* outline: 1px black solid; */
+}
+
+.left-content-wrapper {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-content-wrapper {
+  margin-left: 10%;
+}
+
+.left-content-wrapper p,
+.left-content-wrapper a {
+  margin-top: 1em;
+}
+
+#get-started {
+  color: white;
+}
+
+.left-content-wrapper a {
+  text-align: center;
+  padding: 1em 2em;
+  width: 10em;
+  border-radius: 1em;
+  background-color: black;
+}
+
+.left-content-wrapper a {
+  box-shadow: 0.1em 0.8em 1em rgb(15, 15, 15);
+}
+
 section {
   height: 100vh;
 }
 
 #nav-links-container {
-  display: flex;
   align-items: center;
   margin-left: 40vw;
   /* float: right; */
@@ -33,24 +81,37 @@ section {
 /* ======================================= 
                  --COMPONENTS 
  ======================================= */
-#home {
-  background-color: var(--primary-color);
-  width: 100vw;
-  height: 13vh;
+
+.home-content {
+  width: 50%;
+}
+
+.content-wrapper {
+  height: 100vh;
+}
+
+#healthy-text {
+  color: #4da056;
+}
+
+video {
+  width: 85%;
+  height: 75%;
 }
 
 #nav-container {
   width: 100vw;
+  background-color: var(--primary-color);
   height: 13vh;
-  display: flex;
   align-items: center;
+  position: fixed;
 }
 .nav-link {
   margin: 3vw 0vw 0vw 5vw;
   font-size: 1.2rem;
 }
 
-#nav-contact {
+.button {
   background-color: var(--secondary-color);
   width: 10vw;
   height: 2vw;
@@ -62,16 +123,19 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  color: black;
+}
+
+a:visited,
 a:active {
   color: black;
 }
 
-a:visited {
-  color: blue;
-}
-
-a:hover {
-  color: red;
+nav-contact:hover,
+a:hover,
+.left-content-wrapper p {
+  opacity: 0.7;
 }
 
 #nav-contact {
