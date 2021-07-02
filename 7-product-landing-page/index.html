@@ -13,7 +13,10 @@
   <body>
     <section id="home">
       <nav id="nav-container">
-        <a id="product-name" href="">Greener Pasture</a>
+        <div class="product-logo">
+          <img src="assets/leaf-solid.svg" alt="leaf logo" />
+          <a id="product-name" href="">Greener Pasture</a>
+        </div>
         <ul id="nav-links-container">
           <!-- right side  -->
           <li><a class="nav-link" id="nav-home" href="#home">Home</a></li>
@@ -73,7 +76,27 @@
       </div>
     </section>
     <section id="contact-us">
-      <h1>Contact Us!</h1>
+      <div class="contact-wrapper">
+        <div class="form-wrapper">
+          <h2>Say <span class="colored-text">hello!</span></h2>
+          <form>
+            <h3>We're eager to hear from you</h3>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10" required placeholder="Wingardium Leviosa!"></textarea>
+            </div>
+            <input type="submit" value="Send" class="button submit" />
+          </form>
+        </div>
+      </div>
     </section>
   </body>
 </html>
