@@ -19,13 +19,29 @@
 #nav-links-container,
 #nav-container,
 .right-content-wrapper,
-.left-content-wrapper {
+.left-content-wrapper,
+.about-wrapper,
+.benefits-wrapper {
   display: flex;
+}
+
+.about-wrapper h2 {
+  height: 20%;
+}
+
+.benefits-wrapper {
+  align-items: center;
+  justify-content: center;
+  height: 80%;
 }
 
 .right-content-wrapper {
   align-items: center;
   justify-content: center;
+}
+
+.benefits-card {
+  text-align: center;
 }
 
 .home-content {
@@ -43,7 +59,9 @@
 }
 
 .left-content-wrapper p,
-.left-content-wrapper a {
+.left-content-wrapper a,
+#about h2,
+.benefits-wrapper h3 {
   margin-top: 1em;
 }
 
@@ -59,11 +77,13 @@
   background-color: black;
 }
 
-.left-content-wrapper a {
+.left-content-wrapper a,
+.benefits-card {
   box-shadow: 0.1em 0.8em 1em rgb(15, 15, 15);
 }
 
-section {
+section,
+.about-wrapper {
   height: 100vh;
 }
 
@@ -81,6 +101,31 @@ section {
 /* ======================================= 
                  --COMPONENTS 
  ======================================= */
+
+.benefits-card h3 {
+  color: var(--secondary-color);
+}
+
+.benefits-card img {
+  margin-top: 40%;
+  height: 10vh;
+  width: 10vh;
+}
+
+.benefits-card {
+  background-color: white;
+  /* outline: 1px solid black; */
+  height: 20em;
+  width: 17em;
+  border-radius: 1em;
+  margin: 1.5em;
+}
+
+.about-wrapper {
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid black;
+}
 
 .home-content {
   width: 50%;
@@ -105,6 +150,7 @@ video {
   height: 13vh;
   align-items: center;
   position: fixed;
+  z-index: 10;
 }
 .nav-link {
   margin: 3vw 0vw 0vw 5vw;
@@ -150,12 +196,20 @@ ul {
                  --TYPOGRAPHY 
  ======================================= */
 
-h1 {
+h1,
+h2 {
   font-family: 'Playfair Display', Serif;
-  font-size: 48px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 body {
   font-family: 'Source Sans Pro', Sans-Serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
