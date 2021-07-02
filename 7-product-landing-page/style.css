@@ -3,7 +3,7 @@
  ======================================= */
 :root {
   --primary-color: #ead573;
-  --secondary-color: #6da7aa;
+  --secondary-color: #4da056;
 }
 * {
   margin: 0vw;
@@ -21,8 +21,12 @@
 .right-content-wrapper,
 .left-content-wrapper,
 .about-wrapper,
-.benefits-wrapper {
+.benefits-wrapper,
+.testi-wrapper,
+.testi-left-content,
+.photo-wrapper {
   display: flex;
+  /* outline: 1px solid black; */
 }
 
 .about-wrapper h2 {
@@ -35,7 +39,8 @@
   height: 80%;
 }
 
-.right-content-wrapper {
+.right-content-wrapper,
+.photo-wrapper {
   align-items: center;
   justify-content: center;
 }
@@ -44,24 +49,29 @@
   text-align: center;
 }
 
-.home-content {
+.home-content,
+.testi-wrapper {
   margin-top: 13vh;
   /* outline: 1px black solid; */
 }
 
-.left-content-wrapper {
+.left-content-wrapper,
+.testi-left-content {
   flex-direction: column;
   justify-content: center;
 }
 
-.left-content-wrapper {
+.left-content-wrapper,
+.testi-left-content {
   margin-left: 10%;
 }
 
 .left-content-wrapper p,
 .left-content-wrapper a,
 #about h2,
-.benefits-wrapper h3 {
+.benefits-wrapper h3,
+.testi-left-content quote,
+.testi-left-content h3 {
   margin-top: 1em;
 }
 
@@ -102,6 +112,11 @@ section,
                  --COMPONENTS 
  ======================================= */
 
+.photo-wrapper img {
+  /* height: 30em; */
+  height: 30em;
+}
+
 .benefits-card h3 {
   color: var(--secondary-color);
 }
@@ -124,10 +139,12 @@ section,
 .about-wrapper {
   flex-direction: column;
   align-items: center;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
-.home-content {
+.home-content,
+.testi-left-content,
+.photo-wrapper {
   width: 50%;
 }
 
@@ -135,7 +152,7 @@ section,
   height: 100vh;
 }
 
-#healthy-text {
+.colored-text {
   color: #4da056;
 }
 
