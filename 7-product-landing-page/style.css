@@ -126,6 +126,12 @@ section,
                  --COMPONENTS 
  ======================================= */
 
+#wave {
+  /* height: 20vh; */
+  width: 100vw;
+  z-index: 0;
+}
+
 .contact-wrapper {
   width: 100%;
 }
