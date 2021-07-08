@@ -23,7 +23,7 @@ values
 
 -- Update your first record:
 -- first_name : Ivan middle_name : Ingram last_name : Howard age : 25 location : Bulacan
-UPDATE students set first_name = 'Ivan', last_name = 'Howard', age = 25, location = 'Bulacan' where id = 6;
+UPDATE students set first_name = 'Ivan', last_name = 'Howard', age = 25, location = 'Bulacan' where id = 1;
 
 -- Delete your last record in your students table
 DELETE FROM students where id = 6;
