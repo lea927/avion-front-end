@@ -3,7 +3,6 @@
 def unique_in_order(chars) 
   
   chars.is_a?(String) ? chars.squeeze.split(//) : chars.keep_if.with_index { |item, index| item != chars[index+1] }
-
 end
 
 p unique_in_order('AAAABBBCCDAABB') == ['A','B','C','D','A','B']
