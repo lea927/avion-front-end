@@ -1,0 +1,44 @@
+-- Create new table:
+-- • Table name: students
+-- • Columns: id, first_name, middle_name, last_name, age, location
+
+CREATE TABLE students (
+id INT PRIMARY KEY,
+first_name VARCHAR(255) NOT NULL,
+middle_name VARCHAR(255) NOT NULL,
+last_name VARCHAR(255) NOT NULL,
+age INT,
+location VARCHAR(255)
+);
+
+-- • Insert 6 records in your students table.
+INSERT INTO students (id, first_name, middle_name, last_name, age, location)
+values
+(1, 'Juan', '', 'Cruz', 18, 'Manila'),
+(2, 'Anne', '', 'Wall', 20, 'Manila'),
+(3, 'Theresa', '', 'Joseph', 21, 'Manila'),
+(4, 'Isaac', '', 'Gray', 19, 'Laguna'),
+(5, 'Zack', '', 'Mathews', 22, 'Marikina'),
+(6, 'Finn', '', 'Lam', 25, 'Manila');
+
+-- Update your first record:
+-- first_name : Ivan middle_name : Ingram last_name : Howard age : 25 location : Bulacan
+UPDATE students set first_name = 'Ivan', last_name = 'Howard', age = 25, location = 'Bulacan' where id = 1;
+
+-- Delete your last record in your students table
+DELETE FROM students where id = 6;
+
+-- Use your previous table students
+select * from students; 
+
+-- • Display the count of all students
+select count(*) from students;
+
+-- • Select all students with location is Manila
+select * from students where location = 'Manila'; 
+
+-- • Display the average age of all students
+select avg(age) from students;
+
+-- • Display all students by age descending order
+select * from students order by age DESC;
